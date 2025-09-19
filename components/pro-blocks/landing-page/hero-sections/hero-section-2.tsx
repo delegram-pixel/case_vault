@@ -55,7 +55,7 @@ export function HeroSection2() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button>Request Demo</Button>
+            <Button>Get Started</Button>
             <Button variant="ghost">
               View Features
               <ArrowRight />

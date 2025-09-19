@@ -103,7 +103,7 @@ export function LpNavbar1() {
           <NavMenuItems />
           <Link href="#contact">
             <Button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-emerald-600/25 hover:-translate-y-0.5">
-              Get a Quote
+              Get Started
             </Button>
           </Link>
         </div>

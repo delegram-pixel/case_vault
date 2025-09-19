@@ -16,7 +16,7 @@ export default function Page() {
       <HeroSection2 />
       <LogoSection10 />
       <TestimonialsSection1
-        quote="LegalVault transformed our document management. We reduced case preparation time by 60% and never worry about compliance anymore."
+        quote="Case Vault transformed our document management. We reduced case preparation time by 60% and never worry about compliance anymore."
         authorName="Sarah Chen"
         authorRole="Senior Partner at Morrison & Associates"
         avatarSrc="/professional-female-lawyer.png"
