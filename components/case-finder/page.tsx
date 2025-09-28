@@ -18,51 +18,52 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { LpNavbar1 } from "@/components/pro-blocks/landing-page/lp-navbars/lp-navbar-1"
 import { CourtTypeCard } from "@/components/court-type-card"
 import CaseDetails from "@/components/case-details/CaseDetails"
-import { LocationSelector } from "@/components/location-selector"
+// import { LocationSelector } from "@/components/location-selector"
 
 const courtTypes = [
   {
     id: "high-court",
     name: "High Court",
     description: "Civil and criminal cases, appeals from lower courts",
-    icon: "⚖️",
+    icon: "",
     features: ["Civil Cases", "Criminal Cases", "Appeals", "Constitutional Matters"],
   },
   {
     id: "supreme-court",
     name: "Supreme Court",
     description: "Final court of appeal, constitutional matters",
-    icon: "🏛️",
+    icon: "",
     features: ["Final Appeals", "Constitutional Law", "Inter-State Disputes"],
   },
   {
     id: "industrial-court",
     name: "National Industrial Court",
     description: "Labor disputes, employment matters",
-    icon: "🏭",
+    icon: "",
     features: ["Labor Disputes", "Employment Law", "Trade Union Matters"],
   },
   {
     id: "magistrate-court",
     name: "Magistrate Court",
     description: "Minor criminal and civil cases",
-    icon: "🏢",
+    icon: "",
     features: ["Minor Criminal", "Civil Disputes", "Traffic Offenses", "Small Claims"],
   },
   {
     id: "customary-court",
     name: "Customary Court",
     description: "Traditional law, family matters",
-    icon: "🏘️",
+    icon: "",
     features: ["Family Law", "Traditional Disputes", "Marriage Matters", "Inheritance"],
   },
   {
     id: "multi-door-court",
     name: "Multi-door Court",
     description: "Alternative dispute resolution",
-    icon: "🚪",
+    icon: "",
     features: ["Mediation", "Arbitration", "Conciliation", "ADR Services"],
   },
 ]
@@ -112,6 +113,7 @@ const sampleCourts = [
 ]
 
 export function CaseFinder() {
+  // Navbar state and handlers would go here if needed
   const [currentStep, setCurrentStep] = useState(1)
   const [selectedCourtType, setSelectedCourtType] = useState("")
   const [selectedState, setSelectedState] = useState("")
@@ -164,7 +166,7 @@ export function CaseFinder() {
         <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
           <Building2 className="h-8 w-8 text-primary" />
         </div>
-        <h1 className="heading-xl text-foreground">Find Your Court Case</h1>
+        <h1 className="heading-xl text-emerald-600">Find Your Court Case</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Locate courts across Nigeria with detailed information about services, contact details, and operating hours.
           Get directions and check availability.
@@ -256,7 +258,7 @@ export function CaseFinder() {
   const renderStep2 = () => (
     <div className="max-w-6xl mx-auto space-y-8">
       <div className="text-center space-y-4">
-        <h2 className="heading-lg text-foreground">Select Court</h2>
+        <h2 className="heading-lg text-emerald-600">Select Court</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           Choose a court to search for cases or browse the full list
         </p>
@@ -504,6 +506,9 @@ export function CaseFinder() {
   )
 
   return (
+    <div className="min-h-screen flex flex-col">
+      <LpNavbar1 />
+      <main className="flex-1">
     <div className="min-h-screen bg-background">
       <div className="container-padding-x section-padding-y">
         {currentStep === 1 && renderStep1()}
@@ -511,6 +516,8 @@ export function CaseFinder() {
         {currentStep === 3 && renderStep3()}
         {currentStep === 4 && renderStep4()}
       </div>
+    </div>
+      </main>
     </div>
   )
 }

@@ -15,7 +15,7 @@ export function HeroSection2() {
           {/* Section Title */}
           <div className="section-title-gap-xl flex flex-col">
             {/* <Tagline>Case Vault</Tagline> */}
-            <h1 id="hero-heading" className="heading-xl text-balance">
+            <h1 id="hero-heading" className="heading-xl text-balance text-emerald-600">
               Streamline Court Processes from Filing to Resolution
             </h1>
             <p className="text-muted-foreground text-base lg:text-lg text-pretty">

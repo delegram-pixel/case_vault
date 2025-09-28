@@ -13,7 +13,7 @@ export function Footer1() {
           {/* Company Section */}
           <div className="flex flex-col gap-6">
             <Link href="/" aria-label="Go to homepage" className="hover:opacity-80 transition-opacity">
-              <h1 className="font-bold text-2xl">Case Vault</h1> 
+              <h1 className="font-bold text-2xl text-emerald-600">Case Vault</h1> 
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Expert court case management solutions for modern legal systems. Streamline filing, scheduling, and
@@ -34,7 +34,7 @@ export function Footer1() {
 
           {/* Services Section */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-semibold text-foreground">Services</h3>
+            <h3 className="font-semibold text-emerald-600">Services</h3>
             <nav className="flex flex-col gap-3" aria-label="Services navigation">
               <Link
                 href="#case-management"
@@ -65,7 +65,7 @@ export function Footer1() {
 
           {/* Resources Section */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-semibold text-foreground">Resources</h3>
+            <h3 className="font-semibold text-emerald-600">Resources</h3>
             <nav className="flex flex-col gap-3" aria-label="Resources navigation">
               <Link
                 href="#case-studies"
@@ -96,7 +96,7 @@ export function Footer1() {
 
           {/* Company Section */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-semibold text-foreground">Company</h3>
+            <h3 className="font-semibold text-emerald-600">Company</h3>
             <nav className="flex flex-col gap-3" aria-label="Company navigation">
               <Link
                 href="#about"

@@ -14,7 +14,7 @@ export function FaqSection2() {
             {/* Category Tag */}
             <Tagline>FAQ</Tagline>
             {/* Main Title */}
-            <h1 id="faq-heading" className="heading-lg text-foreground">
+            <h1 id="faq-heading" className="heading-lg text-emerald-600">
               Find answers to our frequently asked questions
             </h1>
             {/* Section Description */}

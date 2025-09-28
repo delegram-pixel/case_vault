@@ -16,9 +16,9 @@ const MENU_ITEMS = [
     ],
   },
   { label: "Features", href: "#features" },
-  { label: "User Roles", href: "#user-roles" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Dashboard", href: "/dashboard/clerk" },
+  // { label: "User Roles", href: "#user-roles" },
+  // { label: "Pricing", href: "#pricing" },
+  { label: "Upload Court Case", href: "/dashboard/clerk" },
 ] as const
 
 interface NavMenuItemsProps {
@@ -36,7 +36,7 @@ const NavMenuItems = ({ className }: NavMenuItemsProps) => {
             <div className="relative">
               <Button
                 variant="ghost"
-                className="w-full md:w-auto text-sm font-medium text-gray-700 hover:text-emerald-600 transition-all duration-300 flex items-center gap-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-emerald-600 after:transition-all after:duration-300 hover:after:w-full"
+                className="w-full md:w-auto text-sm font-medium text-black hover:text-white transition-all duration-300 flex items-center gap-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-emerald-600 after:transition-all after:duration-300 hover:after:w-full"
                 onMouseEnter={() => setOpenSubmenu(item.label)}
                 onMouseLeave={() => setOpenSubmenu(null)}
               >
@@ -52,7 +52,7 @@ const NavMenuItems = ({ className }: NavMenuItemsProps) => {
                 >
                   {item.submenu.map(({ label: subLabel, href: subHref }) => (
                     <Link key={subLabel} href={subHref}>
-                      <div className="px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-all duration-200 hover:border-l-2 hover:border-emerald-600 hover:pl-3">
+                      <div className="px-4 py-2 text-sm text-black  hover:text-white transition-all duration-200 hover:border-l-2 hover:border-emerald-600 hover:pl-3">
                         {subLabel}
                       </div>
                     </Link>
@@ -64,7 +64,7 @@ const NavMenuItems = ({ className }: NavMenuItemsProps) => {
             <Link href={item.href}>
               <Button
                 variant="ghost"
-                className="w-full md:w-auto text-sm font-medium text-gray-700 hover:text-emerald-600 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-emerald-600 after:transition-all after:duration-300 hover:after:w-full"
+                className="w-full md:w-auto text-sm font-medium text-black hover:text-white transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-emerald-600 after:transition-all after:duration-300 hover:after:w-full"
               >
                 {item.label}
               </Button>
@@ -86,11 +86,11 @@ export function LpNavbar1() {
       <div className="relative container m-auto flex flex-col justify-between gap-6 px-6 md:flex-row md:items-center md:gap-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="hover:scale-105 transition-transform duration-200">
-          <h1 className="font-bold text-2xl whitespace-nowrap">Case Vault</h1>
+          <h1 className="font-bold text-2xl whitespace-nowrap text-emerald-600">Case Vault</h1>
           </Link>
           <Button
             variant="ghost"
-            className="flex size-9 items-center justify-center md:hidden hover:bg-emerald-50 transition-colors duration-200"
+            className="flex size-9 items-center justify-center md:hidden hover:bg-emerald-400 transition-colors duration-200"
             onClick={toggleMenu}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >

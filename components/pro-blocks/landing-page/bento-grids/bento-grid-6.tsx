@@ -11,7 +11,7 @@ export function BentoGrid6() {
         {/* Section Title */}
         <div className="section-title-gap-lg mx-auto flex max-w-xl flex-col items-center text-center">
           <Tagline>Core Features</Tagline>
-          <h2 className="heading-lg text-balance">Complete case management solution for modern courts</h2>
+          <h2 className="heading-lg text-balance text-emerald-600">Complete case management solution for modern courts</h2>
         </div>
 
         {/* Feature Grid */}
