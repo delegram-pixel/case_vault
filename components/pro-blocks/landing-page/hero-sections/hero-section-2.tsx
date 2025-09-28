@@ -16,10 +16,10 @@ export function HeroSection2() {
           <div className="section-title-gap-xl flex flex-col">
             {/* <Tagline>Case Vault</Tagline> */}
             <h1 id="hero-heading" className="heading-xl text-balance">
-              Streamline Court Case Management from Filing to Resolution
+              Streamline Court Processes from Filing to Resolution
             </h1>
             <p className="text-muted-foreground text-base lg:text-lg text-pretty">
-              Digital case management system designed for courts without online filing. Empowers clerks, judges, and
+              A digital case management system designed for courts without online filing. It empowers clerks, judges, and
               attorneys with efficient case tracking, scheduling, and document management.
             </p>
           </div>
@@ -30,7 +30,7 @@ export function HeroSection2() {
                 <Users className="text-primary h-5 w-5" />
               </div>
               <span className="text-card-foreground text-base leading-6 font-medium">
-                Role-based dashboards for all court users
+                Role-based dashboards for judges, attorneys, and clerks
               </span>
             </div>
 
@@ -48,7 +48,7 @@ export function HeroSection2() {
                 <FileText className="text-primary h-5 w-5" />
               </div>
               <span className="text-card-foreground text-base leading-6 font-medium">
-                Digital document scanning & storage
+                Secure, centralized document repository
               </span>
             </div>
           </div>
@@ -67,8 +67,8 @@ export function HeroSection2() {
         <div className="w-full flex-1">
           <AspectRatio ratio={1 / 1}>
             <Image
-              src="/court-case-management-dashboard-interface.jpg"
-              alt="Case Vault court case management dashboard"
+              src="/role-based-dashboard-judges-attorneys-clerks.jpg"
+              alt="Court Case Filing and Management System dashboard"
               fill
               priority
               className="h-full w-full rounded-xl object-cover"

@@ -1,6 +1,5 @@
 "use client"
 
-import { Logo } from "@/components/pro-blocks/logo"
 import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { useState } from "react"
@@ -8,17 +7,18 @@ import Link from "next/link"
 
 const MENU_ITEMS = [
   {
-    label: "Services",
-    href: "#services",
+    label: "Modules",
+    href: "#modules",
     submenu: [
-      { label: "Case Management", href: "#case-management" },
-      { label: "Document Filing", href: "#document-filing" },
-      { label: "Court Integration", href: "#court-integration" },
+      { label: "Case Filing", href: "#case-filing" },
+      { label: "Document Management", href: "#document-management" },
+      { label: "Scheduling", href: "#scheduling" },
     ],
   },
   { label: "Features", href: "#features" },
-  { label: "Case Studies", href: "#case-studies" },
+  { label: "User Roles", href: "#user-roles" },
   { label: "Pricing", href: "#pricing" },
+  { label: "Dashboard", href: "/dashboard/clerk" },
 ] as const
 
 interface NavMenuItemsProps {
@@ -101,7 +101,7 @@ export function LpNavbar1() {
         {/* Desktop Navigation */}
         <div className="hidden w-full flex-row justify-end items-center gap-6 md:flex">
           <NavMenuItems />
-          <Link href="#contact">
+          <Link href="/case-finder">
             <Button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-emerald-600/25 hover:-translate-y-0.5">
               Get Started
             </Button>
@@ -112,9 +112,9 @@ export function LpNavbar1() {
         {isMenuOpen && (
           <div className="flex w-full flex-col justify-end gap-5 pb-2.5 md:hidden">
             <NavMenuItems />
-            <Link href="#pricing">
+            <Link href="/case-finder">
               <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition-all duration-200 hover:shadow-lg">
-                Start Free Trial
+                Get Started
               </Button>
             </Link>
           </div>

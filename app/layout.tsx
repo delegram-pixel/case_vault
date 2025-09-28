@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.jpg",
     apple: "/apple-touch-icon.jpg",
   },
-    generator: 'v0.app'
+
 }
 
 export default function RootLayout({
